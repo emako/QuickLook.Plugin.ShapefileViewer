@@ -68,6 +68,10 @@
         <PackageReference Include="System.Data.SQLite.MSIL" Version="1.0.86.0" />
     </ItemGroup>
 
+    <Target Name="ReduceReleasePackaging" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+        <Delete Files="$(OutputPath)\QuickLook.Common.dll" Condition="Exists('$(OutputPath)\QuickLook.Common.dll')" />
+    </Target>
+
     <ItemGroup>
         <None Include="QuickLook.Plugin.Metadata.Base.config" />
         <None Include="QuickLook.Plugin.Metadata.config">
