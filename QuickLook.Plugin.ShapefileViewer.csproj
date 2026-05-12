@@ -10,6 +10,7 @@
         <UseWPF>true</UseWPF>
         <UseWindowsForms>true</UseWindowsForms>
         <SignAssembly>false</SignAssembly>
+        <NoWarn>${NoWarn};NU1608</NoWarn>
         <ProjectGuid>{863ECAAC-18D9-4256-A27D-0F308089FB47}</ProjectGuid>
     </PropertyGroup>
 
@@ -64,8 +65,8 @@
 
     <ItemGroup>
         <PackageReference Include="QuickLook.Common" Version="4.5.0" />
-        <PackageReference Include="BruTile" Version="0.7.4.4" />
         <PackageReference Include="Common.Logging" Version="2.0.0" />
+        <PackageReference Include="BruTile" Version="0.7.4.4" />
         <PackageReference Include="GeoAPI" Version="1.7.2" />
         <PackageReference Include="NetTopologySuite" Version="1.13.2" />
         <PackageReference Include="NetTopologySuite.IO" Version="1.13.2" />
