@@ -3,8 +3,7 @@
     <Platform Name="Any CPU" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="QuickLook.Common/QuickLook.Common.csproj" />
-  <Project Path="QuickLook.Plugin.ShapefileViewer.csproj">
+  <Project Path="QuickLook.Plugin.ShapefileViewer.csproj" Id="863ecaac-18d9-4256-a27d-0f308089fb47">
     <Platform Solution="*|x86" Project="x86" />
   </Project>
 </Solution>
