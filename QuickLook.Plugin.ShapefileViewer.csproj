@@ -6,17 +6,13 @@
         <OutputType>Library</OutputType>
         <RootNamespace>QuickLook.Plugin.ShapefileViewer</RootNamespace>
         <AssemblyName>QuickLook.Plugin.ShapefileViewer</AssemblyName>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <UseWPF>true</UseWPF>
         <UseWindowsForms>true</UseWindowsForms>
         <SignAssembly>false</SignAssembly>
         <NoWarn>${NoWarn};NU1608</NoWarn>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <ProjectGuid>{863ECAAC-18D9-4256-A27D-0F308089FB47}</ProjectGuid>
-    </PropertyGroup>
-
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -58,11 +54,6 @@
         <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
-    <PropertyGroup>
-        <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    </PropertyGroup>
-
     <ItemGroup>
         <PackageReference Include="QuickLook.Common" Version="4.5.0" />
         <PackageReference Include="Common.Logging" Version="2.0.0" />
@@ -79,6 +70,9 @@
 
     <ItemGroup>
         <None Include="QuickLook.Plugin.Metadata.Base.config" />
+        <None Include="QuickLook.Plugin.Metadata.config">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
 </Project>

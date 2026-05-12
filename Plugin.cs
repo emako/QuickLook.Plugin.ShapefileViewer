@@ -7,6 +7,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
+using System.Windows.Media;
 using static SharpMap.Forms.MapBox;
 
 namespace QuickLook.Plugin.ShapefileViewer;
@@ -43,6 +44,7 @@ public class Plugin : IViewer
             WindowsFormsHost host = new()
             {
                 Child = mapBox,
+                Background = Brushes.White,
             };
             VectorLayer layer = new(Path.GetFileName(path))
             {
