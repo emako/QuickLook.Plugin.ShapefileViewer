@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="QuickLook.Common/QuickLook.Common.csproj" />
+  <Project Path="QuickLook.Plugin.ShapefileViewer.csproj">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>
